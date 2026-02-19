@@ -1,3 +1,2 @@
-String responseBody = prev.getResponseDataAsString();
-JsonNode json = new ObjectMapper().readTree(responseBody);
-vars.put("extracted_access_token", json.get("accessToken").asText());
+log.info("=== TOKEN API RESPONSE CODE: " + responseCode)
+log.info("=== TOKEN API RESPONSE BODY: " + responseBody)
